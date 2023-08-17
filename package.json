@@ -1,0 +1,31 @@
+{
+  "name": "sample-serverless-1",
+  "version": "1.0.0",
+  "description": "serverless application example",
+  "main": "index.js",
+  "scripts": {
+    "local:dev": "npx serverless offline --stage local --region ap-south-1 --reloadHandler"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.119",
+    "@types/node": "^20.5.0",
+    "prettier": "^3.0.2",
+    "pretty-quick": "^3.1.3",
+    "serverless": "^3.34.0",
+    "serverless-dotenv-plugin": "^6.0.0",
+    "serverless-offline": "^12.0.4"
+  },
+  "dependencies": {
+    "@middy/core": "^4.6.0",
+    "@middy/do-not-wait-for-empty-event-loop": "^4.6.0",
+    "@middy/error-logger": "^4.6.0",
+    "@middy/http-cors": "^4.6.0",
+    "@middy/http-json-body-parser": "^4.6.0",
+    "@middy/http-security-headers": "^4.6.0",
+    "axios": "^1.4.0",
+    "date-fns": "^2.30.0"
+  }
+}
